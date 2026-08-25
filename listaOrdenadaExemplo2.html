@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" 
+	content="width=width-device, initial scale=1.0">
+	<title>Exemplo de Lista Ordenada</title>
+</head>
+<body>
+	<h1>Planejamento e Itinerário de Viagem</h1>
+	<section>
+		<h2>Check-list pré-viagem</h2>
+		<p>Ações prioritárias organizadas do dia 3 até 
+		a véspera do embarque.</p>
+		
+		<!--
+		1. Contagem Regressiva (Uso de 'reversed' e 'start')
+		-->
+		<ol reversed="start">
+			<li>Confirmar a reserva do hotel e passagens aéreas.</li>
+			<li>Fazer o <i>check-in online</i> e 
+			organizar documentos pessoais</li>
+			<li>Mala pronta e carregadores na mochila de mão</li>
+		</ol>
+	</section>
+	<!-- 2. Itinerário principal com sub-itinerário
+		uso do type e aninhamento:
+		Lista Ordenada(OL) dentro de outra lista Ordenada.
+	-->
+	<section>
+		<h2>Roteiro Principal</h2>
+		<p>Atividades organizadas em ordem cronológica com 
+		letras maiúsculas:</p>
+		
+		<!-- 'type="A"' define a numeração como A, B, C, etc. --> 
+		<ol type="A">
+			<li>Embarque no aeroporto e voo com destino 
+				à cidade de destino</li>
+			
+			<!-- Item pai que contém uma lista aninhada -->
+			<li>Chegada ao hotel e passeios do primeiro dia
+			<!-- Importante: a sublistar fica obrigatoriamente
+				 dentro do li pai -->
+			<!-- Sublista com algarismos romanos 
+				em minúsculo ('type="i"') -->
+				<ol type="i">
+					<li>Realizar o check-in na recepção</li>
+					<li>Almoçar no restaurante típico do centro histórico</li>
+					<li>Caminhada guiada pelo parque central</li>
+				</ol>
+			</li> <!--Fechamento correto do <li> pai após a sublista -->
+			<li>Retorno ao hotel e jantar de boas-vindas</li>
+		</ol>
+	</section>
+	<!--Continuação de Etapas (Uso do Atributo Start) -->
+	<section>
+		<h2>Atividades do Segundo Dia</h2>
+		<p>
+			Continuação do itinerágio geral iniciando a partir
+			do número 4.
+		</p>
+		<ol start="4">
+			<li>Visita ao Museu da Arte Contemporânea</li>
+			<li>Passeio de barco ao pôr do sol</li>
+			<li>Transfer (Translado) para o aeroporto e 
+			retorno para casa</li>
+		</ol>
+		
+	</section>
+
+</body>
+
+</html>
