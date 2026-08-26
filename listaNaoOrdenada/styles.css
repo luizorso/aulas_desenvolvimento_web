@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Estilos Gerais para Exemplo de Lista Não Ordenada
+   Arquivo: styles.css
+   ========================================================================== */
+
+/* Configurações básicas de layout e tipografia */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f4f6f9;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Título Principal */
+h1 {
+  color: #1a365d;
+  border-bottom: 3px solid #3182ce;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* Títulos das Seções */
+h3 {
+  color: #2b6cb0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 15px;
+}
+
+/* Separador horizontal */
+hr {
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 25px 0;
+}
+
+/* Estilização Geral de Listas */
+ul {
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
