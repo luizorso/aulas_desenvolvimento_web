@@ -1,0 +1,39 @@
+/* CSS básico para Menu de Navegação
+
+/* Remove as bolinhas da lista */
+
+ul{
+	list-style-type:none;
+	background-color: #333;
+	padding: 10px;
+}
+
+/* Coloca os itens da lista lado a lado */
+li{
+	display: inline;
+	margin-right: 15px;
+}
+
+/* Estiliza os links */
+a{
+	color:white;
+	text-decoration: none;
+	font-family: sans-serif;
+	
+}
+
+/* Muda a cor do link ao passar o mouse */
+a:hover{
+	color: yellow;
+}
+
+/*Comentários: */
+
+/*
+list-style-type: none; — Tira as bolinhas (marcadores) 
+da lista <ul>.
+display: inline; — Faz os itens <li> ficarem na mesma 
+linha em vez de um abaixo do outro.
+text-decoration: none; — Remove o sublinhado padrão dos 
+links <a>.a:hover — Altera a cor do texto para amarelo 
+quando o usuário passa o ponteiro do mouse por cima.

@@ -1,0 +1,28 @@
+/* Estilos básicos para a página */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #003366;
+}
+
+h3 {
+    color: #555;
+    margin-top: 15px;
+}
+
+ul {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+li {
+    margin-bottom: 5px;
+}

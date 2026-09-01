@@ -1,0 +1,95 @@
+/*Eu sou um comentário*/
+
+/* Reset básico e configurações globais */
+/* Seletor Universal (*): Aplica as regras a todos os elementos da página */
+* {
+    margin: 0;            
+	/* Remove o espaçamento externo padrão de todos os elementos */
+    padding: 0;           
+	/* Remove o espaçamento interno padrão de todos os elementos */
+    box-sizing: border-box; 
+	/* Garante que largura e altura incluam o padding e a borda, evitando que os elementos vazem do layout */
+}
+
+/* ESTILIZAÇÃO DO CORPO DA PÁGINA (BODY) */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+	/* Define a hierarquia de fontes a serem usadas no texto */
+    background-color: #f4f6f8;                                   
+	/* Define a cor de fundo da página (tom cinza claro) */
+    color: #333;                                                 
+	/* Define a cor padrão do texto (cinza escuro) */
+    line-height: 1.6;                                            
+	/* Define a altura entre as linhas de texto para melhorar 
+	a leitura */
+    padding: 20px;                                               
+	/* Espaçamento interno de 20px em todos os lados da tela */
+    max-width: 800px;                                            
+	/* Limita a largura máxima do conteúdo a 800px */
+    margin: 0 auto;                                              
+	/* Centraliza o bloco da página horizontalmente 
+	(0 no topo/base, auto nas laterais) */
+}
+
+/* Títulos */
+h1 {
+    color: #1a365d;            
+	/* Cor azul escuro */
+    text-align: center;        
+	/* Centraliza o texto do título */
+    margin-bottom: 20px;       
+	/* Espaço externo de 20px abaixo do título */
+    padding-bottom: 10px;      
+	/* Espaço interno de 10px entre o texto e a borda inferior */
+    border-bottom: 2px solid #3182ce; 
+	/* Linha de fundo sólida de 2px na cor azul */
+}
+
+
+/* Listas Principais */
+
+/* Estilização do container da lista (<ul>) */
+ul {
+	background-color: #ffffff;         
+	/* Cor de fundo branca criando um visual de 'cartão' */
+	border-radius: 8px;                
+	/* Arredonda os cantos da caixa em 8px */
+	padding: 15px 15px 15px 35px;      
+	/* Espaçamento interno: 
+		topo (15px), 
+		direita (15px), 
+		base (15px), 
+		esquerda (35px) */
+	margin-bottom: 15px;               
+	/* Espaço externo abaixo da lista */
+	list-style-type: none;             
+	/* Remove os marcadores (bolinhas) padrão da lista */
+}
+
+/* Estilização dos itens da lista (<li>) */
+li {
+	margin-bottom: 8px;   /
+	* Espaço de 8px entre os itens da lista */
+	color: #4a5568;       
+	/* Cor do texto dos itens em cinza-azulado */
+}
+
+/* Listas Aninhadas (Sublistas) */
+/* Seleciona listas <ul> que estão dentro de outra <ul> (Sublistas) */
+ul ul {
+    background-color: #f8fafc;          
+	/* Fundo levemente mais escuro que a lista principal 
+	para dar destaque de hierarquia */
+    border-radius: 0 6px 6px 0;         
+	/* Arredonda apenas os cantos superior-direito e 
+	inferior-direito */
+    margin-top: 8px;                    
+	/* Espaço acima da sublista */
+    margin-bottom: 8px;                 
+	/* Espaço abaixo da sublista */
+    padding: 10px 10px 10px 25px;       
+	/* Recuo interno ajustado para subitens */
+    list-style-type: none;              
+	/* Garante a remoção das bolinhas nas sublistas */
+}

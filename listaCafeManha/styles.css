@@ -1,0 +1,72 @@
+/*seletores */
+/* Configuração Global E reset */
+/* Seletor Universal (*): Seleciona TODOS os elementos da página.
+   Usado para padronizar o comportamento de espaçamentos em 
+   diferentes navegadores. */
+*{
+	margin: 0;
+	/* Remove as margens externas padrão de todos os elementos  */
+	padding:0;
+	/* Remove os espaçamentos internos padrão de todos os elementos */
+	box-sizing: border-box;
+	/* Inclui o padding e a borda no cálculo da largura/altura total do elemento */
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	/* Define a pilha de fontes do texto (prioridade: Arial -> Helvetica -> qualquer sans-serif) */
+	background-color: #f4f6f8;
+	/* Cor de fundo da página (tom cinza bem claro) */
+	color: #333333;
+	/* Cor principal do texto (cinza escuro) */
+	line-height: 1.6;
+	/* Altura da linha de texto (1.6x o tamanho da fonte, melhora a leitura) */
+	padding: 40px 20px; 
+	/* Espaçamento interno: 40px no topo/base e 20px nas laterais (Corrigido: adicionado ':') */
+	max-width: 600px;
+	/* largura máxima que o conteúdo pode atingir */
+	margin: 0 auto; 
+	/* Centraliza o bloco do body horizontalmente na tela (0 topo/base, auto nas laterais) */
+}
+
+/* Tipos de marcadores: disc, circle, 
+square e none (nenhum) */
+/* Estilização da lista não ordenada */
+ul{
+	/*nome_propriedade: valor */
+	list-style-type: none; 
+	/* Remove as bolinhas/marcadores padrão da lista */
+	background-color: #ffffff;
+	/* Cor de fundo do cartão/bloco da lista (branco puro) */
+	border: 1px solid #e2e8f0;
+	/* Borda fina e clara de 1px ao redor da lista */
+	border-radius: 8px;
+	/* Arredonda os cantos do bloco da lista */
+	padding: 15px 20px 15px 50px;
+	/* Espaçamento interno nos 4 lados: topo (15px), direita (20px), inferior (15px), esquerda (50px) */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	/* Sombra projetada:
+	   - Deslocamento horizontal: 0px
+	   - Deslocamento vertical: 2px
+	   - Raio de desfoque (blur): 4px
+	   - Cor: Preto com 50% de opacidade (rgba(0, 0, 0, 0.5)) */
+
+}
+
+/* Estilização dos itens da lista */
+li{
+	font-size: 1.05rem;
+	/* Tamanho da fonte ligeiramente maior que o padrão (1.05x o tamanho base) */
+	color: #4a5568;
+	/* Cor do texto dos itens (tom cinza-azulado) */
+	margin-bottom: 8px;
+	/* Adiciona um espaço de 8px abaixo de cada item para separá-los */
+}
+/* Pseudoclasse :last-child
+   Alvo: Seleciona apenas o último elemento <li> dentro da 
+   sua lista pai. */
+li:last-child{
+	margin-bottom: 0;
+	/* Remove a margem inferior do último item para não desequilibrar 
+	o padding interno da <ul> */
+}
